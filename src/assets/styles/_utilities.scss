@@ -1,0 +1,135 @@
+//TODO: add _spacing.scss file to have more contorl over spacing across the app
+
+.margin-bottom, .margin-bottom-md {
+  margin-bottom: 24px;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 16px;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+
+.margin-top, .margin-top-md {
+  margin-top: 24px;
+}
+
+.margin-top-sm {
+  margin-top: 16px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 16px;
+}
+
+.margin-right {
+  margin-right: 24px;
+}
+
+.margin-right-sm {
+  margin-right: 16px;
+}
+
+.margin-right-xs {
+  margin-right: 8px;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.padding-bottom, .padding-bottom-md {
+  padding-bottom: 24px;
+}
+
+.padding-top, .padding-top-md {
+  padding-top: 24px;
+}
+
+.padding, .padding-md {
+  padding: 24px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--app-color);
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+
+  &--full {
+    @include respond-to(md) {
+      width: 100%;
+    }
+  }
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.no-results {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 24px 0;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  @include respond-to(md) {
+    flex-direction: column;
+    align-items: revert;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

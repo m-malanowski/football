@@ -1,0 +1,14 @@
+//TODO: Generally I am using my own css frameWork, those are micro styles needed for this project
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'components';
+@import 'utilities';
+@import 'animations';
+
